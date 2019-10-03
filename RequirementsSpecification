@@ -15,6 +15,42 @@ Table of contents
 2.5 Assumptions and dependencies
 3. Specific requirements (See the attached UML use case specification)
 
+Student
+1. displayCourses - arif
+2. displayCourseHome - arif
+3. displayCourseContent - arif
+4. displayAssignments - greg
+5. displayGrades - greg
+6. updateProfile - sam  
+7. takeQuiz - sam
+8. displayClasslist - ben
+9. sendCourseEmail - ben
+10. displayGroups - reid
+11. updateChecklist - reid
+12. contactSupport - Xavier
+
+Prof
+1. createCourse - 
+2. addCourseContent - (lot of stuff)
+3. PostCourseInfo - 
+4. sendCourseEmail *
+5. gradeQuiz - 
+6. contactSupport *
+7. ViewStudentList - 
+
+
+TA
+1. gradeQuiz *
+2. contactSupport *
+3. ViewCourseWorkInfo - 
+4. DowloadCourseWorkSubmisson - 
+
+Administrators
+1. createCourse * 
+2. addCourseContent *
+3. PostCourseInfo *
+
+EXAMPLE:
 1. Use Case Name: Make Course Registration
 2. Actor: Student
 3. Precondition
