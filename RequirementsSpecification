@@ -57,6 +57,14 @@ Administrators
 
 Use cases:
 Student
+4.1. Use Case Name: displayAssignments
+Description: Display a list of assignments organized by time posted. One assignment can be selected to view in-depth information (requirements, due date, etc.). May link off to submit assignment.
+Actors: Student, Prof, TA
+
+5.1. Use Case Name: displayGrades
+Description: Display a list of grades, grouped by type (assignment, quiz) and date. One grade can be selected for marker's comments, if applicable.
+Actors: Student, Prof, TA
+
 6.1. Use Case Name: updateProfile
 Description: Should someone wish to change the information listed on their profile (i.e photo, hometown, address, etc.), they can opt to do so by navigating to the “Update Profile” page.
 Actors: Student, Prof, TA, Administrators
