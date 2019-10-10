@@ -15,6 +15,10 @@ Table of contents
 2.5 Assumptions and dependencies
 3. Specific requirements (See the attached UML use case specification)
 
+
+***Our Use Cases List, Temporary***
+'-' -> First mention; need to build
+'*' -> Second mention; already built
 Student
 1. displayCourses - arif
 2. displayCourseHome - arif
@@ -38,7 +42,6 @@ Prof
 6. contactSupport *
 7. ViewStudentList - 
 
-
 TA
 1. postCourseGrade *
 2. contactSupport *
@@ -49,15 +52,19 @@ Administrators
 1. createCourse * 
 2. addCourseContent *
 3. PostCourseInfo *
+***End of Our Use Cases List***
+
 
 Use cases:
 Student
 6.1. Use Case Name: updateProfile
 Description: Should someone wish to change the information listed on their profile (i.e photo, hometown, address, etc.), they can opt to do so by navigating to the “Update Profile” page.
 Actors: Student, Prof, TA, Administrators
+
 7.1. Use Case Name: takeQuiz
 Description: After a quiz has been posted by the Professor, the student can navigate to the “Quizzes” page (found under “Assessments”), and opt to take the quiz. After the student completes the quiz, they choose to finalize and submit their answers.
 Actors: Student
+
 12.1. Use Case Name: Contact Support
 Description: If any of the user actors has had an issue with the platform they can send an message directly to the most relevant support employee, whom will then fix the issue and reply to the customer through their contact information.
 12.2. Actors: Student, Prof, TA, Administrators
@@ -81,65 +88,3 @@ Actors: Prof, TA
 4.1. Use Case Name: downloadCourseWorkSubmission
 Description: After course work has been submitted, the TA will download the submission to his/her personal device for marking. Afterwards, the TA will then upload the marked version of the submission and later post the students grade.
 Actors: TA
-
-EXAMPLE:
-1. Use Case Name: Make Course Registration
-2. Actor: Student
-3. Precondition
-	The actor has successfully logged in the system
-4. Actor-System interaction
-	Main case
-	Case 1: Registration is successful
-		Actor: enter course ID
-		System: check if course exists
-		System: check if the course is cancelled
-		System: check if the actor is eligible to register this course, including prerequisite satisfaction, no duplicate registration, and other policy
-		System: check if the course is full
-		System: register the actor to the course
-		System: show confirmation to the actor for successful registration
-	Postcondition: The actor is added to the course registration list
-
-	Alterative cases:
-	Case 2: The course to be registered does not exist
-		Actor: enter course ID
-		System: check if course exists
-		System: show error message
-	Postcondition: no state change to the course
- 
-	Case 3: The actor is not eligible to register the course
-		Actor: enter course ID
-		System: check if course exists
-		System: check if the course is cancelled
-		System: check if the actor is eligible to register this course, including prerequisite satisfaction, no duplicate registration, and other policy
-		System: show error message
-	Postcondition: no state change to the course
-
-	Case 4: The course is full and the actor is added to the waiting list
-		Actor: enter course ID
-		System: check if course exists
-		System: check if the course is cancelled
-		System: check if the actor is eligible to register this course, including prerequisite satisfaction, no duplicate registration, and other policy
-		System: check if the course is full
-		System: ask the actor if adding to the course waiting list
-		Actor: enter “yes”
-		System: add the actor to the course waiting list
-		System: show confirmation to the actor for adding to the waiting list
-	Postcondition: the actor is added to the course waiting list
-
-	Case 5: The course is full and the actor is not added to the waiting list
-		Actor: enter course ID
-		System: check if course exists
-		System: check if the course is cancelled
-		System: check if the actor is eligible to register this course, including prerequisite satisfaction, no duplicate registration, and other policy
-		System: check if the course is full
-		System: ask the actor if adding to the course waiting list
-		Actor: enter “no”
-		System: show message to the actor for not adding to the waiting list
-	Postcondition: no change to the course’s state
-
-	Case 6: The course is cancelled
-		Actor: enter course ID
-		System: check if course exists
-		System: check if the course is cancelled
-		System: show the course is cancelled
-	Postcondition: no change to the course’s state
