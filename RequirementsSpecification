@@ -97,6 +97,10 @@ Description: If any of the user actors has had an issue with the platform they c
 	System: Send an email with the actor's contact info and issue description.
 	Postcondition: Support is now aware of the actor's issue and will resolve it then send a confirmation to the actor's email when solved. 
 Prof
+1.1 Use case Name: createCourse
+Description: A prof may have the option to create a course with the materials they wish to add with it. This use case will allow for a prof to add content to the course.
+Actors: Prof, Administrators
+
 5.1. Use Case Name: postCourseGrade
 Description: After a particular piece of course work has been submitted and graded, the TA or Professor actor can choose to post the student’s grade.
 Actors: Prof, TA
