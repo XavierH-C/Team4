@@ -57,6 +57,18 @@ Administrators
 
 Use cases:
 Student
+1.1 displayCourses: 
+Description: Display a list of courses organized by the semester(Fall 2019, Winter 2020, etc.). This shall lead to page with all contents related to the Course (Assignments, Outline, Quizzes, etc.).
+Actors: TA, Professor, Student
+
+2.1 displayCourseHome:
+Description: Display the contents of a particular course, for example: Assignments, Outline, Labs, CourseInfo, Timeline, etc. Each of these contents shall be linked to a page that goes into detail about them. This shall be the central hub for any details related to the Course.
+Actors: TA, Professor, Student
+
+3.1 displayCourseContent:
+Description: Display the list of content associated with the particular course. This will summarize anything and everything linked to the particular course and shall have a list of links that lead to those particular use cases
+Actors: Student, TA, Professor.
+
 4.1. Use Case Name: displayAssignments
 Description: Display a list of assignments organized by time posted. One assignment can be selected to view in-depth information (requirements, due date, etc.). May link off to submit assignment.
 Actors: Student, Prof, TA
