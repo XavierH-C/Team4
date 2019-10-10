@@ -50,6 +50,20 @@ Administrators
 2. addCourseContent *
 3. PostCourseInfo *
 
+Use cases:
+12.1. Use Case Name: Contact Support
+Description: If any of the user actors has had an issue with the platform they can send an message directly to the most relevant support employee, whom will then fix the issue and reply to the customer through their contact information.
+12.2. Actors: Student, Prof, TA, Administrators
+12.3. Precondition: The actor has successfully logged in the system.
+12.4. Actor-System interaction:
+	System: Display support domain options.
+	Actor: Choose most relavent support domain to contact.
+	System:	Ask the actor to enter a short description of their issue and a send button.
+	Actor: Describes their issue then selects the send button.
+	System: Send an email with the actor's contact info and issue description.
+	Postcondition: Support is now aware of the actor's issue and will resolve it then send a confirmation to the actor's email when solved. 
+
+
 EXAMPLE:
 1. Use Case Name: Make Course Registration
 2. Actor: Student
