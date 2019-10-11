@@ -85,6 +85,18 @@ Actors: Student, Prof, TA, Administrators
 Description: After a quiz has been posted by the Professor, the student can navigate to the “Quizzes” page (found under “Assessments”), and opt to take the quiz. After the student completes the quiz, they choose to finalize and submit their answers.
 Actors: Student
 
+8.1 Use Case Name: displayClasslist
+Description: After the student, professor or TA logs in, they will have the option to display the class list.  
+This use case will display a new page which contains every person who is either a professor, TA or student 
+in the class.  This list can be sorted alphabetically and by position.  A link to email any person 
+in the class can be brought up through this screen.
+
+9.1 Use Case Name: sendCourseEmail
+Description: After the student, professor or TA logs in, they will have the option to send and view emails 
+from and to the class.  The initial screen will have all emails received from the class.  Emails can be 
+composed by selecting a button that will create a new window containing a text editor.  After the email
+is written, the address which the email is to be sent to can be entered in a separate text field.
+
 10.1. Use Case Name: displayGroups
 Description: Allows actor to view class groups created by prof actor.
 10.2. Actors: Student, Prof, T.A., Admin
@@ -94,7 +106,7 @@ Description: Allows actor to view class groups created by prof actor.
 		System: display 'no groups' message.
 	Case 2: Groups
 		System: display classlist with group number beside each student.
-10.5. Postcondition: none
+	Postcondition: none
 
 11.1. Use Case Name: updateChecklist
 Description: Allows actor to create or remove items from their own checklist.
@@ -112,7 +124,7 @@ Description: Allows actor to create or remove items from their own checklist.
 		System: display checklist editor
 		Actor: choose item to remove from list
 		System: update checklist
-11.5. Postcondition: none
+	Postcondition: none
 
 12.1. Use Case Name: Contact Support
 Description: If any of the user actors has had an issue with the platform they can send an message directly to the most relevant support employee, whom will then fix the issue and reply to the customer through their contact information.
