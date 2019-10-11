@@ -85,6 +85,35 @@ Actors: Student, Prof, TA, Administrators
 Description: After a quiz has been posted by the Professor, the student can navigate to the “Quizzes” page (found under “Assessments”), and opt to take the quiz. After the student completes the quiz, they choose to finalize and submit their answers.
 Actors: Student
 
+10.1. Use Case Name: displayGroups
+Description: Allows actor to view class groups created by prof actor.
+10.2. Actors: Student, Prof, T.A., Admin
+10.3. Precondition: Login Success
+10.4. Actor-System Interaction:
+	Case 1: No groups
+		System: display 'no groups' message.
+	Case 2: Groups
+		System: display classlist with group number beside each student.
+10.5. Postcondition: none
+
+11.1. Use Case Name: updateChecklist
+Description: Allows actor to create or remove items from their own checklist.
+11.2. Actors: Student, Prof, TA, Administrators
+11.3. Precondition: Login success
+11.4. Actor-System Interaction:
+	System: display current checklist
+	Case 1: add to list
+		Actor: Select add option
+		System: display information form
+		Actor: complete information form
+		System: update checklist
+	Case 2: remove from list
+		Actor: select remove option
+		System: display checklist editor
+		Actor: choose item to remove from list
+		System: update checklist
+11.5. Postcondition: none
+
 12.1. Use Case Name: Contact Support
 Description: If any of the user actors has had an issue with the platform they can send an message directly to the most relevant support employee, whom will then fix the issue and reply to the customer through their contact information.
 12.2. Actors: Student, Prof, TA, Administrators
@@ -104,6 +133,16 @@ Actors: Prof, Administrators
 5.1. Use Case Name: postCourseGrade
 Description: After a particular piece of course work has been submitted and graded, the TA or Professor actor can choose to post the student’s grade.
 Actors: Prof, TA
+
+6.1. Use Case Name: createGroups
+Description: Allows prof actor to sort student objects into groups.
+6.2. Actors: Prof
+6.3. Precondition: Successful login to Prof account
+6.4. Actor-System Interaction:
+	System: Display create group form
+	Actor: Complete create group form
+	System: Assign student objects specified group number
+6.5. Postcondition: none
 
 TA
 1.1 Use Case Name: postCourseGrade
