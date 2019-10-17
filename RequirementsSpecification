@@ -53,10 +53,25 @@ Description: Display the list of content associated with the particular course. 
 5. Use Case Name: displayAssignments
 Actors: Student, Professor or TA
 Description: Display a list of assignments organized by time posted. One assignment can be selected to view in-depth information (requirements, due date, etc.). Will also be used to submit assignments for the student actors.
+Precondition: Successful login
+Actor-System Interaction: 
+	System: Display a list of available assignments.
+	Actor: Select one assignment to view in depth.
+	System: Display link to both assignment document and submission folder.
+	Case 1: Actor: Assignment document selected
+		System: Display assignment document
+	Case 2: Actor: Submission folder selected
+		System: Redirect to assignment submission folder
+Postcondition: None
 
 6. Use Case Name: displayGrades
 Actors: Student, Professor or TA
 Description: Display a list of grades, grouped by type (assignment, quiz) and date. One grade can be selected for marker's comments, if applicable.
+Actor-System Interaction:
+	System: Display a list of all available grades.
+	Actor: Selects a grade to view in depth.
+	System: Display grade and marker's comments, marker's comments box empty if none were added.
+Postcondition: None
 
 7. Use Case Name: updateProfile
 Actors: Student, Professor, TA or Administrator
