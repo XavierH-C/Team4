@@ -1,78 +1,80 @@
 Title page
 
+//Page Break
+
 Table of contents
 1. Introduction
-1.1 Purpose
-1.2 Scope
-1.3 Definitions, acronyms, and abbreviations
-1.4 References
-1.5 Overview
+	1.1 Purpose
+	1.2 Scope
+	1.3 Definitions, acronyms, and abbreviations
+	1.4 References
+	1.5 Overview
 2. Overall description
-2.1 Product perspective
-2.2 Product functions
-2.3 User characteristics
-2.4 Constraints
-2.5 Assumptions and dependencies
+	2.1 Product perspective
+	2.2 Product functions
+	2.3 User characteristics
+	2.4 Constraints
+	2.5 Assumptions and dependencies
 3. Specific requirements (See the attached UML use case specification)
 
-Use cases:
-	1. login		- xavier
-	2. displayCourses	- arif
-	3. displayCourseHome	- arif
-	4. displayCourseContent	- arif
-	5. displayAssignments	- greg
-	6. displayGrades	- greg
-	7. updateProfile	- sam
-	8. takeQuiz		- sam
-	9. displayClasslist	- ben
-	10. sendCourseEmail	- ben
-	11. displayGroups	- reid
-	12. updateChecklist	- reid
-	13. contactSupport	- xavier
-	14. addCourseContent	- *To be assigned*
-	15. postCourseGrade	- *To be assigned*
-	16. createGroups	- *To be assigned*
-	17. createCourse	- *To be assigned*
-TODO:
-UML: Redo diagram
-Update use case table above
-Write report
+//Page Break
 
-1. Use Case Name: login
+1. Introduction
+	1.1 Purpose:
+	
+	1.2 Scope:
+	
+	1.3 Definitions, acronyms, and abbreviations:
+	
+	1.4 References:
+	
+	1.5 Overview:
+	
+//Page Break
+
+2. Overall description:
+
+	2.1. Product perspective:
+*USE CASE DIAGRAM*
+
+	2.2. Product functions:
+		1. login
+		2. viewCourseContent
+		3. addCourseContent
+		4. viewAssignmentQuestions
+		5. submitCourseWork
+		6. postCourseWorkRequirements
+		7. viewGrades
+		8. postGrade
+		9. takeQuiz
+		10. setQuiz
+		11. updateChecklist
+		12. setChecklist
+		13. viewGroups
+		14. createGroups
+		15. sendCourseEmail
+		16. updateProfile
+		17. createCourse
+		18. CreateUserAccounts
+		19. AddStudentCourseRegistration
+		20. viewClasslist
+		21. AddCourseOfferingInfo
+
+1. login
 Actors: Student, Professor, TA or Administrator
 Description: Before accessing their profile’s information and functions, a user must prove their identity of the account by login in with their name and password. This use case is a precondition to access all further use cases.
 
-NEW SubmitCourseWork
-Actor: Student
-
-New ViewGrades
-Actor: Student
-
-NEW ViewAssignmentQuestions
-Actor: Student
-
-NEW PostCourseWorkRequirements
-Actor Professor
-
-NEW setChecklist
-Actor: Professor
-
-NEW CreateUserAccounts
-Actor: Administrator
-
-NEW AddCurseOfferingInfo
-Actor: Administrator
-
-NEW AddStudentCourseRegistration
-Actor: Administrator
-
-4. Use Case Name: viewCourseContent
+2. viewCourseContent
 Actors: Student
 Description: Display the contents of a particular course, for example: Assignments, Outline, Labs, Timeline, etc. Each of these contents shall be linked to a page that goes into detail about them. This shall be the central hub for any details related to the Course.
 Description: Display the list of content associated with the particular course. This will summarize anything and everything linked to the particular course and shall have a list of links that lead to those particular use cases
 
-5. Use Case Name: viewAssignments
-Actors: Student, Professor or TA
+3. addCourseContent
+Actors: Professor and TA
+Description: This use case will allow for a professor to create a course and add students, TAs and initial content.
+
+4. viewAssignmentQuestions
+Actors: Student
 Description: Display a list of assignments organized by time posted. One assignment can be selected to view in-depth information (requirements, due date, etc.). Will also be used to submit assignments for the student actors.
 Precondition: Successful login
 Actor-System Interaction: 
@@ -85,7 +87,13 @@ Actor-System Interaction:
 		System: Redirect to assignment submission folder
 Postcondition: None
 
-6. Use Case Name: viewGrades
+5. submitCourseWork
+Actor: Student
+
+6. postCourseWorkRequirements
+Actor Professor
+
+7. viewGrades
 Actors: Student
 Description: Display a list of grades, grouped by type (assignment, quiz) and date. One grade can be selected for marker's comments, if applicable.
 Actor-System Interaction:
@@ -93,37 +101,19 @@ Actor-System Interaction:
 	Actor: Selects a grade to view in depth.
 	System: Display grade and marker's comments, marker's comments box empty if none were added.
 Postcondition: None
-*** SET FOR PROFS
 
-7. Use Case Name: updateProfile
-Actors: Student, Professor, TA or Administrator
-Description: Should someone wish to change the information listed on their profile ( photo, address, etc.), they can opt to do so by navigating to the “Update Profile” page.
+8. postGrade
+Actors: Professor and TA
+Description: After a particular piece of course work has been submitted and graded, the TA or Professor actor can choose to post the student’s grade.
 
-8. Use Case Name: takeQuiz
+9. takeQuiz
 Actors: Student
 Description: After a quiz has been added to a course’s content by the professor, the student can navigate to this page and opt to take the quiz. After the student completes the quiz, they choose to finalize and submit their answers.
-*** SET FOR PROF
 
-9. Use Case Name: viewClasslist
-Actors: Student, Professor or TA
-Description: The actor will have the option to display the class list. This use case will display a new page which contains every person who is either a professor, TA or student in the class.  This list can be sorted alphabetically and by position. A link to email any person in the class can be brought up through this screen.
+10. setQuiz
+Actors: Professor
 
-10. Use Case Name: sendCourseEmail
-Actors: Student, Professor, TA or Administrator
-Description: The actor will have the option to send and view emails from and to the class.  The initial screen will have all emails received from the class. Emails can be composed by selecting a button that will create a new window containing a text editor. After the email is written, the address which the email is to be sent to can be entered in a separate text field.
-
-11. Use Case Name: viewGroups
-Actors: Student, Professor, TA or Administrator
-Description: Allows actor to view in class groups created by the professor.
-Precondition: Login Success
-Actor-System Interaction:
-	Case 1: No groups
-		System: display 'no groups' message.
-	Case 2: Groups
-		System: display classlist with group number beside each student.
-Postcondition: none
-
-12. Use Case Name: updateChecklist
+11. updateChecklist
 Actors: Student
 Description: Allows actor to create, mark complete or remove items from their own checklist.
 Precondition: Login success
@@ -141,15 +131,21 @@ Actor-System Interaction:
 		System: update checklist
 Postcondition: none
 
-14. Use case Name: addCourseContent
-Actors: Professor and TA
-Description: This use case will allow for a professor to create a course and add students, TAs and initial content.
-	
-15. Use Case Name: postCourseGrade
-Actors: Professor and TA
-Description: After a particular piece of course work has been submitted and graded, the TA or Professor actor can choose to post the student’s grade.
+12. setChecklist
+Actor: Professor
 
-16. Use Case Name: createGroups
+13. viewGroups
+Actors: Student or TA
+Description: Allows actor to view in class groups created by the professor.
+Precondition: Login Success
+Actor-System Interaction:
+	Case 1: No groups
+		System: display 'no groups' message.
+	Case 2: Groups
+		System: display classlist with group number beside each student.
+Postcondition: none
+
+14. createGroups
 Actors: Professor
 Description: Allows professor actor to sort students from a particular class into groups.
 Precondition: Successful login to Prof account
@@ -159,6 +155,42 @@ Actor-System Interaction:
 	System: Assign student objects specified group number
 Postcondition: none
 
-17. Use case Name: createCourse
+15. sendCourseEmail
+Actors: Student, Professor, TA or Administrator
+Description: The actor will have the option to send and view emails from and to the class.  The initial screen will have all emails received from the class. Emails can be composed by selecting a button that will create a new window containing a text editor. After the email is written, the address which the email is to be sent to can be entered in a separate text field.
+
+16. updateProfile
+Actors: Student, Professor or TA
+Description: Should someone wish to change the information listed on their profile ( photo, address, etc.), they can opt to do so by navigating to the “Update Profile” page.
+
+17. createCourse
 Actors: Administrators
 Description: An administrator has the option to create a course and assign a professor to it.
+
+18. CreateUserAccounts
+Actor: Administrator
+
+19. AddStudentCourseRegistration
+Actor: Administrator
+
+20. viewClasslist
+Actors: Student, Professor or TA
+Description: The actor will have the option to display the class list. This use case will display a new page which contains every person who is either a professor, TA or student in the class.  This list can be sorted alphabetically and by position. A link to email any person in the class can be brought up through this screen.
+
+21. AddCourseOfferingInfo
+Actor: Administrator
+
+//Page Break
+
+	2.3. Constraints:
+*Constraints on project (time, tools, people, capital...)*
+
+	2.4. Assumptions and dependencies:
+*Hardwares, libraries and tools used*
+
+	2.5. Apportioning of requirements:
+*say requirements that may be delayed until future release*
+
+//Page Break
+
+3. Specific requirements (See the attached UML use case specification)
