@@ -89,9 +89,30 @@ Postcondition: None
 
 5. submitCourseWork
 Actor: Student
+Description: After professor has posted course work requirements, a student may add one of their files and submit them for marking.
+Precondition: Professor's postCourseWorkRequirements has been completed
+Actor-System Interaction: 
+	System: Display a list of course work available for submission, as well as if it has already been submitted
+	Actor: Select one piece of work to submit
+	System: Display info for the course work
+	Actor: Selects one or more files to submit for grading
+	System: Allows "Submit" button to be selected
+	Case 1: Actor: Selects submit
+		System: Submits work to professor
+	Postcondition: Course work is submitted and may be marked
+	Case 2: Actor: Selects cancel
+		System: Returns user to course home screen
+	Postcondition: None
 
 6. postCourseWorkRequirements
-Actor Professor
+Actor: Professor
+Description: Allows professor to post requirements for course work, as well as allowing said course work to be submitted.
+Precondition: None
+Actor-System Interaction:
+	System: Display text box for teacher to write requirements or allow for selection of a PDF to be uploaded instead
+	Actor: Writes requirements/selects PDF to upload
+	System: Makes document viewable to students and opens a submission folder of the same name given to course work
+Postcondition: submitCourseWork is now available to students for this piece of work
 
 7. viewGrades
 Actors: Student
@@ -179,6 +200,13 @@ Description: The actor will have the option to display the class list. This use 
 
 21. AddCourseOfferingInfo
 Actor: Administrator
+Description: Allows administrator to add info such as prerequisites, times available, etc. to be selected and entered into by students
+Precondition: None
+Actor-System Interaction:
+	System: Displays text box for admin to write a short course description, timing, avaiable spots, and prerequisites.
+	Actor: Enters course info
+	System: Creates a running tally of students currently in class. Posts course info for students to view
+Postcondition: Course is available to be viewed and entered into by students. Running tally is updated when student enters
 
 //Page Break
 
