@@ -193,6 +193,15 @@ Postcondition: none
 
 12. setChecklist
 Actor: Professor
+Description: Allows Prof actor to set tasks for each student's checklist
+Precondition: Prof account login success
+Actor-System Interatction:
+	System: Display class list
+	Actor: Select group of students to set their checklists
+	System: Display create checklist form
+	Actor: Complete create checklist form
+	System: Create checklist on each student account specified
+Postcondion: Checklist is created
 
 13. viewGroups
 Actors: Student or TA
