@@ -45,20 +45,21 @@ Table of contents
 		5. submitCourseWork
 		6. postCourseWorkRequirements
 		7. viewGrades
-		8. postGrade
-		9. takeQuiz
-		10. setQuiz
+		8. postGrade -> Sam
+		9. takeQuiz -> Sam
+		10. postQuiz -> Sam
 		11. updateChecklist
 		12. setChecklist
 		13. viewGroups
 		14. createGroups
 		15. sendCourseEmail
-		16. updateProfile
+		16. updateProfile -> Sam
 		17. createCourse
 		18. CreateUserAccounts
 		19. AddStudentCourseRegistration
 		20. viewClasslist
 		21. AddCourseOfferingInfo
+		22. createProfile -> Sam
 
 1. login
 Actors: Student, Professor, TA or Administrator
@@ -159,9 +160,18 @@ Description: After a particular piece of course work has been submitted and grad
 9. takeQuiz
 Actors: Student
 Description: After a quiz has been added to a course’s content by the professor, the student can navigate to this page and opt to take the quiz. After the student completes the quiz, they choose to finalize and submit their answers.
+Preconditon:
+Actor-System Interaction:
 
-10. setQuiz
+Postconditon:
+
+10. postQuiz
 Actors: Professor
+Description:
+Precondition:
+Actor-System Interaction:
+
+Postcondition:
 
 11. updateChecklist
 Actors: Student
@@ -212,6 +222,9 @@ Description: The actor will have the option to send and view emails from and to 
 16. updateProfile
 Actors: Student, Professor or TA
 Description: Should someone wish to change the information listed on their profile ( photo, address, etc.), they can opt to do so by navigating to the “Update Profile” page.
+Precondition: Login use-case was succesful
+
+Postcondition: 
 
 17. createCourse
 Actors: Administrators
@@ -236,6 +249,14 @@ Actor-System Interaction:
 	Actor: Enters course info
 	System: Creates a running tally of students currently in class. Posts course info for students to view
 Postcondition: Course is available to be viewed and entered into by students. Running tally is updated when student enters
+
+22. createProfile
+Actor: Administrator
+Description:
+Precondition: Login use-case was successful
+Actor-System Interaction:
+
+Postcondition:
 
 //Page Break
 
