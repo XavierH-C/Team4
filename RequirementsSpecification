@@ -38,9 +38,9 @@ Table of contents
 *USE CASE DIAGRAM*
 
 	2.2. Product functions:
-		1. login
-		2. viewCourseContent
-		3. addCourseContent
+		1. login --> Arif 
+		2. viewCourseContent --> Arif
+		3. addCourseContent --> Arif 
 		4. viewAssignmentQuestions
 		5. submitCourseWork
 		6. postCourseWorkRequirements
@@ -63,15 +63,44 @@ Table of contents
 1. login
 Actors: Student, Professor, TA or Administrator
 Description: Before accessing their profile’s information and functions, a user must prove their identity of the account by login in with their name and password. This use case is a precondition to access all further use cases.
+Precondition: None
+Actor-System Interaction:
+	System: Display login forms
+	Actor: Fill in login forms 
+	Case1: Actor Successfully logged in	
+		System: Display success message
+		Postcondition: Actor logged in to their account
+	Case2: Actor did not Successfullylog in
+		System: Display error message and prompt user to try again
+		Postcondition: Show login page again
 
 2. viewCourseContent
-Actors: Student
+Actors: Student, Ta, Professor, Administrator
 Description: Display the contents of a particular course, for example: Assignments, Outline, Labs, Timeline, etc. Each of these contents shall be linked to a page that goes into detail about them. This shall be the central hub for any details related to the Course.
-Description: Display the list of content associated with the particular course. This will summarize anything and everything linked to the particular course and shall have a list of links that lead to those particular use cases
+Precondition: Actors must be logged in and select the particular course they want to view
+Actor-System Interaction: 
+	System: Display list of contents associated with the Course
+	Actor: Select any of the items in the list
+	System: Display the page that was linked with the chosen choice of Actor
+Postcondition: Display the page that is linked with the choice of the Actor
 
 3. addCourseContent
 Actors: Professor and TA
 Description: This use case will allow for a professor to create a course and add students, TAs and initial content.
+Precondition: Successful login
+Actor-System Interaction:
+	System: Display options for actor to choose to add (document, link, news,etc)
+	Actor: Select the type of content to add 
+	System: Display the drag and drop option for user to add the content or the form where the can add the associated link.
+	Actor: Fill in the required forms or drop the content in the right precondition
+	System: Display add content button
+	Actor: Select add content
+	Case1 : content was Successfully added
+		System: Display Successful message
+		Postcondition: Add the course content to the list of contents of the course
+	Case2 : content was not Successfully added
+		System: Display error message and prompt user to try again
+		Postcondition: None
 
 4. viewAssignmentQuestions
 Actors: Student
