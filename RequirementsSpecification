@@ -91,7 +91,7 @@ Precondition: Successful login
 Actor-System Interaction:
 	System: Display options for actor to choose to add (document, link, news,etc)
 	Actor: Select the type of content to add 
-	System: Display the drag and drop option for user to add the content or the form where the can add the associated link.
+	System: Display the drag and drop option for user to add the content or the form where they can add the associated link.
 	Actor: Fill in the required forms or drop the content in the right precondition
 	System: Display add content button
 	Actor: Select add content
@@ -155,27 +155,42 @@ Postcondition: None
 8. postGrade
 Actors: Professor and TA
 Description: After a particular piece of course work has been submitted and graded, the TA or Professor actor can choose to post the student’s grade.
-Precondition:
+Precondition: Login use-case was successful
 Actor-System Interaction:
-
-Postcondition:
+	System: Display a list of students in the course 
+	Actor: Select a student
+	System: Display a list of all the students' course work submissions for the course
+	Actor: Select a particular piece of course work to submit a grade for
+	System: Display validation form
+	Actor: Complete validation form
+Postcondition: One students' course work grade is posted
 
 9. takeQuiz
 Actors: Student
 Description: After a quiz has been added to a course’s content by the professor, the student can navigate to this page and opt to take the quiz. After the student completes the quiz, they choose to finalize and submit their answers.
-Preconditon:
+Preconditon: Login use-case was successful
 Actor-System Interaction:
-
-Postconditon:
+	System: Display list of quizzes to be taken
+	Actor: Select one quiz to complete
+	System: Display quiz
+	Actor: Complete quiz
+	System: Display validation form
+	Actor: Complete validation form
+Postconditon: One quiz is completed
 
 10. postQuiz
 Actors: Professor
-Description:
-Precondition:
-Actor-System Interaction:
-
-Postcondition:
-
+Description: Allows the professor actor(s) to post a quiz, which will later be completed by the student actor(s)
+Precondition: Login use-case was successful
+	System: Display list of types of questions that have been previously added to thw quiz, or a message stating no questions have been added
+	System: Displays two empty text boxes; One for the professor to write the question in, the other for the professor to write the answer in
+	Actor: Writes the question and answer in the appropriate text box.
+	Case 1: This is the final question on the quiz
+	System: Display validation form
+	Actor: Complete validation form
+	Postcondition: One quiz is posted
+	Case 2: This is not the final question on the quiz
+	System: Restarts postQuiz
 11. updateChecklist
 Actors: Student
 Description: Allows actor to create, mark complete or remove items from their own checklist.
@@ -240,8 +255,11 @@ Actors: Student, Professor or TA
 Description: Should someone wish to change the information listed on their profile ( photo, address, etc.), they can opt to do so by navigating to the “Update Profile” page.
 Precondition: Login use-case was succesful
 Actor-System Interaction:
-
-Postcondition: 
+	System: Display update profile/account form
+	Actor: Choose and replace any desired information located on their profile
+	System: Display validation form
+	Actor: Complete validation form
+Postcondition: One user profile is updated
 
 17. createCourse
 Actors: Administrators
