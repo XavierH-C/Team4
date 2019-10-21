@@ -38,28 +38,28 @@ Table of contents
 *USE CASE DIAGRAM*
 
 	2.2. Product functions:
-		1. login --> Arif 
-		2. viewCourseContent --> Arif
-		3. addCourseContent --> Arif 
-		4. viewAssignmentQuestions
-		5. submitCourseWork
-		6. postCourseWorkRequirements
-		7. viewGrades
-		8. postGrade -> Sam
-		9. takeQuiz -> Sam
-		10. postQuiz -> Sam
-		11. updateChecklist -> Reid
-		12. setChecklist -> Reid
-		13. viewGroups -> Reid
-		14. createGroups -> Reid
+		1. login 			-> Arif 
+		2. viewCourseContent 		-> Arif
+		3. addCourseContent 		-> Arif 
+		4. viewAssignmentQuestions 	-> Arif
+		5. submitCourseWork 		-> Greg
+		6. postCourseWorkRequirements 	-> Greg
+		7. viewGrades 			-> Greg
+		8. postGrade 			-> Sam
+		9. takeQuiz 			-> Sam
+		10. postQuiz 			-> Sam
+		11. updateChecklist 		-> Reid
+		12. setChecklist 		-> Reid
+		13. viewGroups 			-> Reid
+		14. createGroups 		-> Reid
 		15. sendCourseEmail
-		16. updateProfile -> Sam
-		17. createCourse
-		18. CreateUserAccounts
-		19. AddStudentCourseRegistration
-		20. viewClasslist
-		21. AddCourseOfferingInfo
-		22. createProfile -> Sam
+		16. updateProfile 		-> Sam
+		17. createCourse 		-> Xavier
+		18. CreateUserAccounts		-> Xavier
+		19. AddStudentCourseRegistration-> Xavier
+		20. viewClasslist		-> Xavier
+		21. AddCourseOfferingInfo 	-> Greg
+		22. createProfile 		-> Sam
 
 1. login
 Actors: Student, Professor, TA or Administrator
@@ -156,6 +156,10 @@ Postcondition: None
 8. postGrade
 Actors: Professor and TA
 Description: After a particular piece of course work has been submitted and graded, the TA or Professor actor can choose to post the student’s grade.
+Precondition:
+Actor-System Interaction:
+
+Postcondition:
 
 9. takeQuiz
 Actors: Student
@@ -227,27 +231,108 @@ Postcondition: none
 15. sendCourseEmail
 Actors: Student, Professor, TA or Administrator
 Description: The actor will have the option to send and view emails from and to the class.  The initial screen will have all emails received from the class. Emails can be composed by selecting a button that will create a new window containing a text editor. After the email is written, the address which the email is to be sent to can be entered in a separate text field.
+Precondition:
+Actor-System Interaction:
+
+Postcondition: 
 
 16. updateProfile
 Actors: Student, Professor or TA
 Description: Should someone wish to change the information listed on their profile ( photo, address, etc.), they can opt to do so by navigating to the “Update Profile” page.
 Precondition: Login use-case was succesful
+Actor-System Interaction:
 
 Postcondition: 
 
 17. createCourse
 Actors: Administrators
-Description: An administrator has the option to create a course and assign a professor to it.
+Description: An administrator has the option to create a new course and assign a professor and possibly some TAs to it.
+Precondition: Login use-case was succesful and actor is an administrator.
+Actor-System Interaction:
+	System: Display course creation form.
+	Actor: Enter course name, description, department, timeslot, and credits offered.
+	System: Display professor assignment form.
+	Actor: Enters or chooses one professor.
+	System: Display TA assigment form.
+	Actor: Enters or chooses none, one or more TAs.
+	System: Validate the new course object.
+	Case 1: No duplicates found.
+		System:	Add course to course data table.
+		System: Display confirmation of course creation.
+		Postcondition: A new course object is created and stored. The assigned professor can now add course content and all other professor privileges.
+	Case 2: Duplicate course found.
+		System: Display error message to actor, ask the actor if they wish to retry.
+		Case 1: Chooses to retry adding a course.
+			System: Restarts createCourse.
+			Postcondition: createCourse is restarted again
+		Case 2: User does not want to retry.
+			System: Bring user to their home page.
+			Postcondition: None.
 
 18. CreateUserAccounts
 Actor: Administrator
+Description: To add more actors in our system, an administrator creates accounts for professors, TAs, students, and even other administrators.
+Precondition: Login use-case was succesful and actor is an administrator.
+Actor-System Interaction:
+	System: Display account creation form.
+	Actor: Enter course name, email, faculty, and type of account.
+	System: Display additional account type form.
+	Case 1: Account is student type.
+			Actor: Enter student number, credits aquired, degree start date, and current GPA.
+	Case 2: Account is TA type.
+			Actor: Enter student number.
+	Case 3: Account is professor type.
+			Actor: Enter a description of past experience, and employee number.
+	Case 4: Account is administrator type.
+			Actor: Enter employee number.
+	System: Validate the new account object.
+	Case 1: No duplicates found.
+		System:	Add course to course data table.
+		System: Display confirmation of course creation.
+		Postcondition: A new account object is created and stored.
+	Case 2: Duplicate course found.
+		System: Display error message to actor, ask the actor if they wish to retry.
+		Case 1: Chooses to retry adding an account.
+			System: Restarts CreateUserAccounts.
+			Postcondition: CreateUserAccounts is restarted again
+		Case 2: User does not want to retry.
+			System: Bring user to their home page.
+			Postcondition: None.
 
 19. AddStudentCourseRegistration
 Actor: Administrator
+Description: Once a course has been created, an administrator can add the students that will take the course.
+Precondition: Login use-case was succesful and actor is an administrator.
+Actor-System Interaction:
+	System: Display add students form.
+	Actor: Enters or chosses one or more student objects to join the course.
+	System: Validate the new student object.
+	Case 1: No duplicates found in course.
+		System:	Add student reference to course data.
+		System: Display confirmation of student addition.
+		Postcondition: One or multiple students are added to a course which they can now access.
+	Case 2: Duplicate student found.
+		System: Display error message to actor, ask the actor if they wish to retry.
+		Case 1: Chooses to retry adding students.
+			System: Restarts AddStudentCourseRegistration.
+			Postcondition: AddStudentCourseRegistration is restarted again
+		Case 2: User does not want to retry.
+			System: Bring user to their home page.
+			Postcondition: None.
 
 20. viewClasslist
 Actors: Student, Professor or TA
-Description: The actor will have the option to display the class list. This use case will display a new page which contains every person who is either a professor, TA or student in the class.  This list can be sorted alphabetically and by position. A link to email any person in the class can be brought up through this screen.
+Description: The actor will have the option to display the class list. This use case will display a new page which contains every person who is either a professor, TA or student in the class. A link to email any person in the class can be brought up through this screen.
+Precondition: Login use-case was succesful.
+Actor-System Interaction:
+	System:	Display all accounts accounts assigned to a course, orginised my account type.
+	System:	Display a link to email all accounts shown.
+	Actor: Can choose to send an email to any account.
+	Case 1: The actor wishes to send an email.
+		System: Launch sendCourseEmail while passing the choosen account as a parametter.
+		Postcondition: sendCourseEmail is lauched.
+	Case 2: The actor does not wish to send an email.
+		Postcondition: None
 
 21. AddCourseOfferingInfo
 Actor: Administrator
