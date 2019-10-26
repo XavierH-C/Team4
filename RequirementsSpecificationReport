@@ -33,6 +33,16 @@ SRS."
 	1.2 Scope:
 	
 	1.3 Definitions, acronyms, and abbreviations:
+
+	Student: The student whos is/going to be enrolled and studying in the University for which this product is being made.
+	Professor: The person in charge of managing the materials and teaching the course for which this product is being made.
+	TA: Acronym- Teaching asssitant 
+		Definition- The appointed person who is in charge of organizing/collecting answers and marking the students assignments as well as helping the Professor with a particular course for which this product is being made.
+	Administrator: The person/s who is in charge of the administrative activities related to the courses of the university for which this product is being made.
+	Contract: A legally binding document agreed upon by the customer and supplier. This includes the technical and organizational requirements, cost, and schedule for a product. A contract may also contain informal but useful information such as the commitments or expectations of the parties involved.
+	Customer: The person, or persons, who pay for the product and usually (but not necessarily) decide the requirements. For the D2L product, the customer may be the University itself or the end users such as the Professors, TAs, students or the administrators.
+	Supplier: The person, or persons, who produce a product for a customer. For the D2L product, the suppliers are the members of Team 4 of FR01A of CS2043 who are working on and developing the product.
+	User: The person, or persons, who operate or interact directly with the product. For the D2L product, the users are the TA, Students, Professors and the Administrators.
 	
 	1.4 References:
 	
