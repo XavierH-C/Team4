@@ -373,9 +373,15 @@ Postcondition: Course is available to be viewed and entered into by students. Ru
 
 	2.3. Constraints:
 *Constraints on project (time, tools, people, capital...)*
+	This project is constrained by many of the requirements given by the course professor. This project must be written exclusively in Java.
+	The project must be completed by Dec 5th 2019 by the 6 team members. Additional dates have also been given, for each of which another specified checkpoint must be reached.
+	There will be access to a shared database server on the internet, thus internet connection is a requirement.
+	There is no capital allocated.
 
 	2.4. Assumptions and dependencies:
 *Hardwares, libraries and tools used*
+	It is assumed that the computer on which this program is run will have a stable internet connection as well as the processing power to handle its execution.
+	The hardware used is assumed to have a functioning, updated version of Java with all necessary libraries.
 
 	2.5. Apportioning of requirements:
 *say requirements that may be delayed until future release*
