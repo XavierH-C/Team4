@@ -46,6 +46,10 @@ SRS."
 	
 	1.4 References:
 	
+	This report was written in reference to the following publication;
+	
+	IEEE Std 830-1998 (Revision of IEEE Std 830-1993), IEEE Recommended Practice for Software Requirements Specifications.
+	
 	1.5 Overview:
 		This product is an attempt to recreate the online Learning Management System Desire2Learn. The product is aimed to take the functionalities of the D2L website for the University of New Brunswick and relicate the funtionalities that it provides.
 		This product will be using the programming language of Java and integrating the database with SQL such that common functionalities and Use Cases such as viewing course, submitting assignments, marking assignments, adding course content, etc. which are  done by the Professor, TA, student or the administrator can be successfully done and the required changes are all accessible in the Database. 
