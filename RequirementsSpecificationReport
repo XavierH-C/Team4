@@ -20,18 +20,25 @@ Table of contents
 //Page Break
 
 1. Introduction
+
 	1.1 Purpose:
-	
-IEEE: "It describes the content and qualities of a good software requirements specification (SRS) and presents several 
-sample SRS outlines.
 
-specifying requirements of software to be developed but also can be
-applied to assist in the selection of in-house and commercial software products.
+TODO:
+This subsection should
+a) Delineate the purpose of the SRS;
+b) Specify the intended audience for the SRS
 
-This recommended practice does not identify any specific method, nomenclature, or tool for preparing an
-SRS."
 	1.2 Scope:
 	
+TODO:
+This subsection should
+a) Identify the software product(s) to be produced by name (e.g., Host DBMS, Report Generator, etc.);
+b) Explain what the software product(s) will, and, if necessary, will not do;
+c) Describe the application of the software being specified, including relevant benefits, objectives, and
+goals;
+d) Be consistent with similar statements in higher-level specifications (e.g., the system requirements
+specification), if they exist.
+
 	1.3 Definitions, acronyms, and abbreviations:
 
 	Student: The student whos is/going to be enrolled and studying in the University for which this product is being made.
@@ -408,3 +415,10 @@ Postcondition: Course is available to be viewed and entered into by students. Ru
 //Page Break
 
 3. Specific requirements (See the attached UML use case specification)
+
+TODO:
+This subsection should
+a) Specific requirements should be stated in conformance with all the characteristics described in 4.3.
+b) Specific requirements should be cross-referenced to earlier documents that relate.
+c) All requirements should be uniquely identifiable.
+d) Careful attention should be given to organizing the requirements to maximize readability.
