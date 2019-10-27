@@ -47,7 +47,12 @@ SRS."
 	1.4 References:
 	
 	1.5 Overview:
-	
+		This product is an attempt to recreate the online Learning Management System Desire2Learn. The product is aimed to take the functionalities of the D2L website for the University of New Brunswick and relicate the funtionalities that it provides.
+		This product will be using the programming language of Java and integrating the database with SQL such that common functionalities and Use Cases such as viewing course, submitting assignments, marking assignments, adding course content, etc. which are  done by the Professor, TA, student or the administrator can be successfully done and the required changes are all accessible in the Database. 
+		Another primary focus of this product is to keep the database secure and a successful execution of the above mentioned use cases.
+		This product is being developed by the members of Team 4 in CS2043 of Section FR01A.
+		The Use cases have been elaborately described in this document for better understanding.
+
 //Page Break
 
 2. Overall description:
