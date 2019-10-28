@@ -1,25 +1,8 @@
-
- 
- 
- 
- 
- 
-
 CS2043 Team Project Phase One Report: 
 Software Requirements Specification 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
 
 Arif Hasan, Xavier Hebert-Couturier, Benjamin Hieblinger Rempel, 
-Reid Hurlburt, Greg Kean, Samuel Keenan 
+Reid Hurlburt, Greg Kean, Samuel Keenan
 CS043: Software Engineering I 
 Dr. Weichang Du 
 October 27, 2019
@@ -47,10 +30,11 @@ Table of contents
 
 	1.1 Purpose:
 
-TODO:
-This subsection should
-a) Delineate the purpose of the SRS;
-b) Specify the intended audience for the SRS
+	This software requirements specification report's purpose is to describe the software system we seek to develop.
+	This document was made to define all functional and non-functional requirements and communiate these to all stakeholders,
+	which for this project would be the development team and the professor of our course Dr. Du. Our team has laid out 
+	how this software product should function so all stakeholders can validate our use case requirements before we enter 
+	the more specific system-design stage.
 
 	1.2 Scope:
 	
@@ -82,11 +66,12 @@ specification), if they exist.
 	IEEE Std 830-1998 (Revision of IEEE Std 830-1993), IEEE Recommended Practice for Software Requirements Specifications.
 	
 	1.5 Overview:
-		This product is an attempt to recreate the online Learning Management System Desire2Learn. The product is aimed to take the functionalities of the D2L website for the University of New Brunswick and relicate the funtionalities that it provides.
-		This product will be using the programming language of Java and integrating the database with SQL such that common functionalities and Use Cases such as viewing course, submitting assignments, marking assignments, adding course content, etc. which are  done by the Professor, TA, student or the administrator can be successfully done and the required changes are all accessible in the Database. 
-		Another primary focus of this product is to keep the database secure and a successful execution of the above mentioned use cases.
-		This product is being developed by the members of Team 4 in CS2043 of Section FR01A.
-		The Use cases have been elaborately described in this document for better understanding.
+
+	This product is an attempt to recreate the online Learning Management System Desire2Learn. The product is aimed to take the functionalities of the D2L website for the University of New Brunswick and relicate the funtionalities that it provides.
+	This product will be using the programming language of Java and integrating the database with SQL such that common functionalities and Use Cases such as viewing course, submitting assignments, marking assignments, adding course content, etc. which are  done by the Professor, TA, student or the administrator can be successfully done and the required changes are all accessible in the Database. 
+	Another primary focus of this product is to keep the database secure and a successful execution of the above mentioned use cases.
+	This product is being developed by the members of Team 4 in CS2043 of Section FR01A.
+	The Use cases have been elaborately described in this document for better understanding.
 
 //Page Break
 
@@ -117,6 +102,8 @@ specification), if they exist.
 		19. AddStudentCourseRegistration-> Xavier
 		20. viewClasslist		-> Xavier
 		21. AddCourseOfferingInfo 	-> Greg
+
+//Page Break
 
 1. login
 Actors: Student, Professor, TA or Administrator
@@ -303,12 +290,10 @@ Postcondition: none
 15. sendCourseEmail
 Actors: Student, Professor, TA or Administrator
 Description: The actor will have the option to send and view emails from and to the class.  The initial screen will have all emails received from the class. Emails can be composed by selecting a button that will create a new window containing a text editor. After the email is written, the address which the email is to be sent to can be entered in a separate text field.
-Precondition: Login Success
+Precondition:
 Actor-System Interaction:
-	System: Display email-draft form
-	Actor: Complete email-draft form by selecting course and writing email
-	System: Send emails to individual memebers of specific course's class list
-Postcondition: Email sent
+
+Postcondition: 
 
 16. updateProfile
 Actors: Student, Professor or TA
@@ -424,14 +409,14 @@ Postcondition: Course is available to be viewed and entered into by students. Ru
 //Page Break
 
 	2.3. Constraints:
-*Constraints on project (time, tools, people, capital...)*
+
 	This project is constrained by many of the requirements given by the course professor. This project must be written exclusively in Java.
 	The project must be completed by Dec 5th 2019 by the 6 team members. Additional dates have also been given, for each of which another specified checkpoint must be reached.
 	There will be access to a shared database server on the internet, thus internet connection is a requirement.
 	There is no capital allocated.
 
 	2.4. Assumptions and dependencies:
-*Hardwares, libraries and tools used*
+
 	It is assumed that the computer on which this program is run will have a stable internet connection as well as the processing power to handle its execution.
 	The hardware used is assumed to have a functioning, updated version of Java with all necessary libraries.
 
