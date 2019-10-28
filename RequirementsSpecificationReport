@@ -38,14 +38,12 @@ Table of contents
 
 	1.2 Scope:
 	
-TODO:
-This subsection should
-a) Identify the software product(s) to be produced by name (e.g., Host DBMS, Report Generator, etc.);
-b) Explain what the software product(s) will, and, if necessary, will not do;
-c) Describe the application of the software being specified, including relevant benefits, objectives, and
-goals;
-d) Be consistent with similar statements in higher-level specifications (e.g., the system requirements
-specification), if they exist.
+	The software project Team 4 will be developing is a D2L-like application. The main objective of the project is to produce software that is able to perform the core functionalities of the actual D2L application, such as create courses, view grades, update profile (etc).
+	We have been limited to including twenty-one of the functions we believed to be most valuable to the end-user of the application; so, many smaller-scale functionalities of the actual D2L will not be provided. The purpose of an application as mentioned is to create
+	an all-in-one platform for the modern-day university student, professor and administrator.
+
+	TODO: (dependant on specific requirements) d) Be consistent with similar statements in higher-level specifications (e.g., the system requirements
+	specification), if they exist.
 
 	1.3 Definitions, acronyms, and abbreviations:
 
