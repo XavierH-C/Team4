@@ -290,10 +290,12 @@ Postcondition: none
 15. sendCourseEmail
 Actors: Student, Professor, TA or Administrator
 Description: The actor will have the option to send and view emails from and to the class.  The initial screen will have all emails received from the class. Emails can be composed by selecting a button that will create a new window containing a text editor. After the email is written, the address which the email is to be sent to can be entered in a separate text field.
-Precondition:
+Precondition: Login Success
 Actor-System Interaction:
-
-Postcondition: 
+	System: Display email-draft form
+	Actor: Complete email-draft form by selecting course and writing email
+	System: Send emails to individual members of specific course's class list
+Postcondition: Email sent
 
 16. updateProfile
 Actors: Student, Professor or TA
