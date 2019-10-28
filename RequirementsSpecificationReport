@@ -41,9 +41,8 @@ Table of contents
 	The software project Team 4 will be developing is a D2L-like application. The main objective of the project is to produce software that is able to perform the core functionalities of the actual D2L application, such as create courses, view grades, update profile (etc).
 	We have been limited to including twenty-one of the functions we believed to be most valuable to the end-user of the application; so, many smaller-scale functionalities of the actual D2L will not be provided. The purpose of an application as mentioned is to create
 	an all-in-one platform for the modern-day university student, professor and administrator.
-
-	TODO: (dependant on specific requirements) d) Be consistent with similar statements in higher-level specifications (e.g., the system requirements
-	specification), if they exist.
+	Our program will be hosted  on a GitHub repository for maintenance and accessibility.
+	The database will be hosted through a local desktop server dedicated to keeping the records accessible through network requests.
 
 	1.3 Definitions, acronyms, and abbreviations:
 
@@ -93,13 +92,13 @@ Table of contents
 		12. setChecklist 		-> Reid
 		13. viewGroups 			-> Reid
 		14. createGroups 		-> Reid
-		15. sendCourseEmail
+		15. sendCourseEmail		-> Reid
 		16. updateProfile 		-> Sam
 		17. createCourse 		-> Xavier
-		18. CreateUserAccounts		-> Xavier
-		19. AddStudentCourseRegistration-> Xavier
+		18. createUserAccounts		-> Xavier
+		19. addStudentCourseRegistration-> Xavier
 		20. viewClasslist		-> Xavier
-		21. AddCourseOfferingInfo 	-> Greg
+		21. addCourseOfferingInfo 	-> Greg
 
 //Page Break
 
@@ -331,7 +330,7 @@ Actor-System Interaction:
 			System: Bring user to their home page.
 			Postcondition: None.
 
-18. CreateUserAccounts
+18. createUserAccounts
 Actor: Administrator
 Description: To add more actors in our system, an administrator creates accounts for professors, TAs, students, and even other administrators.
 Precondition: Login use-case was succesful and actor is an administrator.
@@ -361,7 +360,7 @@ Actor-System Interaction:
 			System: Bring user to their home page.
 			Postcondition: None.
 
-19. AddStudentCourseRegistration
+19. addStudentCourseRegistration
 Actor: Administrator
 Description: Once a course has been created, an administrator can add the students that will take the course.
 Precondition: Login use-case was succesful and actor is an administrator.
@@ -396,7 +395,7 @@ Actor-System Interaction:
 	Case 2: The actor does not wish to send an email.
 		Postcondition: None
 
-21. AddCourseOfferingInfo
+21. addCourseOfferingInfo
 Actor: Administrator
 Description: Allows administrator to add info such as prerequisites, times available, etc. to be selected and entered into by students
 Precondition: None
@@ -422,7 +421,7 @@ Postcondition: Course is available to be viewed and entered into by students. Ru
 
 	2.5. Apportioning of requirements:
 
-	At the moment, there are no requirements that may be delayed until future versions of the system.
+	At the moment, there are no requirements that may be delayed until future releases of the system.
 
 //Page Break
 
@@ -446,15 +445,120 @@ Postcondition: Course is available to be viewed and entered into by students. Ru
 
 		3.1.4 Communications interfaces
 		
-		Communication will be needed between our classes, to our databases, and to ...
+		Communication will be needed between our classes, the data manager class to our data tables, and to the internet.
 
 	3.2 Functional requirements
 
-	...
+		3.2.1 the login Use Case
+			3.2.1.1 A loginUI class
+			3.2.1.2 A loginController class
+
+		3.2.2 The viewCourseContent Use Case
+			3.2.2.1 A viewCourseContentUI class
+			3.2.2.2 A viewCourseContentController class
+			
+		3.2.3 The addCourseContent Use Case
+			3.2.3.1 A addCourseContentUI class
+			3.2.3.2 A addCourseContentController class
+			
+		3.2.4 The viewAssignmentQuestions Use Case
+			3.2.4.1 A viewAssignmentQuestionsUI class
+			3.2.4.2 A viewAssignmentQuestionsController class
+			
+		3.2.5 The submitCourseWork Use Case
+			3.2.5.1 A submitCourseWorkUI class
+			3.2.5.2 A submitCourseWorkController class
+			
+		3.2.6 The postCourseWorkRequirements Use Case
+			3.2.6.1 A postCourseWorkRequirementsUI class
+			3.2.6.2 A postCourseWorkRequirementsController class
+			
+		3.2.7 The viewGrades Use Case
+			3.2.7.1 A viewGradesUI class
+			3.2.7.2 A viewGradesController class
+			
+		3.2.8 The postGrade Use Case
+			3.2.8.1 A postGradeUI class
+			3.2.8.2 A postGradeController class
+			
+		3.2.9 The takeQuiz Use Case
+			3.2.9.1 A takeQuizUI class
+			3.2.9.2 A takeQuizController class
+			
+		3.2.10 The postQuiz Use Case
+			3.2.10.1 A postQuizUI class
+			3.2.10.2 A postQuizController class
+			
+		3.2.11 The updateChecklist Use Case
+			3.2.11.1 A updateChecklistUI class
+			3.2.11.2 A updateChecklistController class
+			
+		3.2.12 The setChecklist Use Case
+			3.2.12.1 A setChecklistUI class
+			3.2.12.2 A setChecklistController class
+			
+		3.2.13 The viewGroups Use Case
+			3.2.13.1 A viewGroupsUI class
+			3.2.13.2 A viewGroupsController class
+			
+		3.2.14 The createGroups Use Case
+			3.2.14.1 A createGroupsUI class
+			3.2.14.2 A createGroupsController class
+			
+		3.2.15 The sendCourseEmail Use Case
+			3.2.15.1 A sendCourseEmailUI class
+			3.2.15.2 A sendCourseEmailController class
+			
+		3.2.16 The updateProfile Use Case
+			3.2.16.1 A updateProfileUI class
+			3.2.16.2 A updateProfileController class
+			
+		3.2.17 The createCourse Use Case
+			3.2.17.1 A createCourseUI class
+			3.2.17.2 A createCourseController class
+			
+		3.2.18 The createUserAccounts Use Case
+			3.2.18.1 A createUserAccountsUI class
+			3.2.18.2 A createUserAccountsController class
+			
+		3.2.19 The addStudentCourseRegistration Use Case
+			3.2.19.1 A addStudentCourseRegistrationUI class
+			3.2.19.2 A addStudentCourseRegistrationController class
+			
+		3.2.20 The viewClasslist Use Case
+			3.2.20.1 A viewClasslistUI class
+			3.2.20.2 A viewClasslistController class
+			
+		3.2.21 The addCourseOfferingInfo Use Case
+			3.2.21.1 A addCourseOfferingInfoUI class
+			3.2.21.2 A addCourseOfferingInfoController class
+
+		3.2.22 The data manager needed to communicate with our database
+			3.2.22.1 A dataManager class
+	
+		3.2.23 A table to store and access course data
+			3.2.23.1 A courses table 
+
+		3.2.24 A table to store and access student data
+			3.2.24.1 A student table 
+
+		3.2.25 A table to store and access TA data
+			3.2.25.1 A TAs table 
+
+		3.2.26 A table to store and access professor data
+			3.2.26.1 A professors table 
+
+		3.2.27 A table to store and access administrator data
+			3.2.27.1 A administrators table 
+
+		3.2.28 A table to store and access a student's course Records
+			3.2.28.1 A studentCourseRecord table
 
 	3.3 Performance requirements
 
-	For the proper perfomance of our proposed system, the user will need ...
+	For the proper perfomance of our proposed system, the user will need any modern computer than has access to a desktop computer which has a
+	stable internet connection, any of the three modern operating system (windows, macOS or linux based OS), and the a functional and updated
+	Java runtime enviroment.
 
 	3.4 Design constraints
 
@@ -464,8 +568,34 @@ Postcondition: Course is available to be viewed and entered into by students. Ru
 
 	3.5 Software system attributes
 
-	TODO ADD THESE TO ABOVE
-	...
+		3.5.1 Reliability
+
+		Our proposed system will be a downloadeble Java bundle, which can be reliably run anywhere if the hardware
+		and software requirements are met.
+
+		3.5.2 Availability
+
+		The availability of our program is greatly lengthen since we will host a GitHub repository that will make our
+		project available to anyone on the internet as long as we keep the project posted and GitHub keeps hosting it.
+
+		3.5.3 Security
+
+		Our security plan is to have multiple layers that validates requests along each use cases' controller and 
+		data manager to ensure no malicious requests are sent to our database. This validation will scan for SQL
+		injections and other scriptic language, assure that the data requested is in a user's defined priviliges,
+		and finally handle any errors that occur with the transer of data. The project bundle will also be locked
+		upon deliverence to customers to discourage modification of the executing code.
+
+		3.5.4 Maintainability
+
+		With properly defined use case UI and controller classes, the fixing of bugs should be straightforward as the
+		dedicated support should be able to identify which segment is to fault.
+
+		3.5.5 Portability
+
+		The application's Java bundle can be easily sold or transfered to a machine through standard file sharing methods
+		such as downloading from a site, storage device, or network request. The database will be hosted through a
+		local desktop server dedicated to keeping the records accessible through network requests.
 
 	3.6 Other requirements
 
