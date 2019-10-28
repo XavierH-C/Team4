@@ -426,12 +426,48 @@ Postcondition: Course is available to be viewed and entered into by students. Ru
 
 //Page Break
 
-3. Specific requirements (See the attached UML use case specification)
+3. Specific requirements
 
-TODO:
-This subsection should
-a) Specific requirements should be stated in conformance with all the characteristics described in 4.3.
-b) Specific requirements should be cross-referenced to earlier documents that relate.
-c) All requirements should be uniquely identifiable.
-d) Careful attention should be given to organizing the requirements to maximize readability.
+	3.1 External interface requirements
+
+		3.1.1 User interfaces
+		
+		The user interface will be built upon the JavaFX framework, which is a software requirement itself.
+
+		3.1.2 Hardware interfaces
+		
+		Since we don't require any low-level programming to acheive our projrct, all hardware interfaces are
+		goint to be managed by the Java programming language's default hardware handling classes.
+
+		3.1.3 Software interfaces
+		
+		Our program will have to interact with a couple of software interfaces.
+		Some interfaces required are the JavaFX framework, the user's operating system, and our data storage system.
+
+		3.1.4 Communications interfaces
+		
+		Communication will be needed between our classes, to our databases, and to ...
+
+	3.2 Functional requirements
+
 	...
+
+	3.3 Performance requirements
+
+	For the proper perfomance of our proposed system, the user will need ...
+
+	3.4 Design constraints
+
+	The design constraints come from the limited experience of our small team, and the short time constraint of our project deadline.
+	The accessibility of the user should also be taken into accound in order to make our graphical user interfaces as simple to use
+	and adaptible as possible.
+
+	3.5 Software system attributes
+
+	TODO ADD THESE TO ABOVE
+	...
+
+	3.6 Other requirements
+
+	Other requirements could be our project deadline that limits our potential development time, the workload from other courses
+	and part-time work that could also affect development time.
