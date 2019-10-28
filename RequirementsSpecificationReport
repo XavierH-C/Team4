@@ -423,7 +423,8 @@ Postcondition: Course is available to be viewed and entered into by students. Ru
 	The hardware used is assumed to have a functioning, updated version of Java with all necessary libraries.
 
 	2.5. Apportioning of requirements:
-*say requirements that may be delayed until future release*
+
+	At the moment, there are no requirements that may be delayed until future versions of the system.
 
 //Page Break
 
@@ -435,3 +436,4 @@ a) Specific requirements should be stated in conformance with all the characteri
 b) Specific requirements should be cross-referenced to earlier documents that relate.
 c) All requirements should be uniquely identifiable.
 d) Careful attention should be given to organizing the requirements to maximize readability.
+	...
