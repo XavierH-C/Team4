@@ -9,49 +9,50 @@ November 10th, 2019
 
 //Page Break
 
-//Classes
-  1.1 loginUI
-  1.2 loginControl    
-  2.1 viewCourseContentUI
-  2.2 viewCourseContentControl
-  3.1 addCourseContentUI
-  3.2 addCourseContentControl
-  4.1 viewAssignmentQuestionsUI
-  4.2 viewAssignmentQuestionsControl
-  5.1 submitCourseWorkUI
-  5.2 submitCourseWorkControl
-  6.1 postCourseWorkRequirementsUI
-  6.2 postCourseWorkRequirementsControl
-  7.1 viewGradesUI
-  7.2 viewGradesControl
-  8.1 postGradeUI
-  8.2 postGradeControl
-  9.1 takeQuizUI
-  9.2 takeQuizControl
-  10.1 postQuizUI
-  10.2 postQuizControl
-  11.1 updateChecklistUI
-  11.2 updateChecklistControl
-  12.1 setChecklistUI 		
-  12.2 setChecklistControl
-  13.1 viewGroupsUI
-  13.2 viewGroupsControl
-  14.1 createGroupsUI
-  14.2 createGroupsControl
-  15.1 sendCourseEmailUI	
-  15.2 sendCourseEmailControl
-  16.1 updateProfileUI
-  16.2 updateProfileControl
-  17.1 createCourseUI
-  17.2 createCourseControl
-  18.1 createUserAccountsUI
-  18.2 createUserAccountsControl
-  19.1 addStudentCourseRegistrationUI
-  19.2 addStudentCourseRegistrationControl
-  20.1 viewClasslistUI
-  20.2 viewClasslistControl
-  21.1 addCourseOfferingInfoUI 	
-  21.2 addCourseOfferingInfoControl
+//Classes requiring signatures/attributes/operations
+
+  1.1 loginUI	-> Arif 
+  1.2 loginControl    -> Arif 
+  2.1 viewCourseContentUI	-> Arif 
+  2.2 viewCourseContentControl	-> Arif 
+  3.1 addCourseContentUI	-> Arif 
+  3.2 addCourseContentControl	-> Arif 
+  4.1 viewAssignmentQuestionsUI	-> Arif 
+  4.2 viewAssignmentQuestionsControl	-> Arif 
+  5.1 submitCourseWorkUI	-> Greg
+  5.2 submitCourseWorkControl	-> Greg
+  6.1 postCourseWorkRequirementsUI	-> Greg
+  6.2 postCourseWorkRequirementsControl	-> Greg
+  7.1 viewGradesUI	-> Greg
+  7.2 viewGradesControl	-> Greg
+  8.1 postGradeUI	-> Sam
+  8.2 postGradeControl	-> Sam
+  9.1 takeQuizUI	-> Sam
+  9.2 takeQuizControl	-> Sam
+  10.1 postQuizUI	-> Sam
+  10.2 postQuizControl	-> Sam
+  11.1 updateChecklistUI	-> Reid
+  11.2 updateChecklistControl	-> Reid
+  12.1 setChecklistUI 		-> Reid
+  12.2 setChecklistControl	-> Reid
+  13.1 viewGroupsUI	-> Reid
+  13.2 viewGroupsControl	-> Reid
+  14.1 createGroupsUI	-> Reid
+  14.2 createGroupsControl	-> Reid
+  15.1 sendCourseEmailUI	-> Reid
+  15.2 sendCourseEmailControl	-> Reid
+  16.1 updateProfileUI	-> Sam
+  16.2 updateProfileControl	-> Sam
+  17.1 createCourseUI	-> Xavier
+  17.2 createCourseControl	-> Xavier
+  18.1 createUserAccountsUI	-> Xavier
+  18.2 createUserAccountsControl	-> Xavier
+  19.1 addStudentCourseRegistrationUI	-> Xavier
+  19.2 addStudentCourseRegistrationControl	-> Xavier
+  20.1 viewClasslistUI	-> Xavier
+  20.2 viewClasslistControl	-> Xavier
+  21.1 addCourseOfferingInfoUI 	-> Greg
+  21.2 addCourseOfferingInfoControl	-> Greg
 
 //Page Break
 
