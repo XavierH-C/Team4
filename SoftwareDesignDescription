@@ -1,0 +1,48 @@
+CS2043 Phase Two Report
+Software Design Description
+
+Arif Hasan, Xavier Hebert-Couturier, Benjamin Hieblinger Rempel, 
+Reid Hurlburt, Greg Kean, Samuel Keenan
+CS043: Software Engineering I 
+Dr. Weichang Du 
+November 10th, 2019
+
+//Page Break
+
+Title page
+
+1. Introduction
+  1.1 Purpose
+  1.2 Scope
+  1.3 Context
+2. Body
+  2.1 Design Module Viewpoint
+    2.1.1 System Class View
+    2.1.2 System Description
+  2.2 Design Behavioral Viewpoint
+    2.2.1 Use-case-1 Realization View
+      2.2.1.1 Use-case-1 Realization sequence diagram
+      2.2.1.2 Use-case-1 Realization description
+    2.2.2 Use-case-2 Realization View
+      2.2.1.1 Use-case-2 Realization sequence diagram
+      2.2.1.2 Use-case-2 Realization description
+     ….
+    2.2.n Use-case-n Realization View
+      2.2.1.1 Use-case-n Realization sequence diagram
+      2.2.1.2 Use-case-n Realization description
+      
+//Page Break
+
+1. Introduction
+
+    1.1 Purpose:
+    
+       
+    1.2 Scope:
+    
+    
+    1.3 Context:
+    
+    
+    
+2. Body
