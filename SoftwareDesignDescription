@@ -9,6 +9,52 @@ November 10th, 2019
 
 //Page Break
 
+//Classes
+  1.1 loginUI
+  1.2 loginControl    
+  2.1 viewCourseContentUI
+  2.2 viewCourseContentControl
+  3.1 addCourseContentUI
+  3.2 addCourseContentControl
+	4.1 viewAssignmentQuestionsUI
+  4.2 viewAssignmentQuestionsControl
+	5.1 submitCourseWorkUI
+  5.2 submitCourseWorkControl
+	6.1 postCourseWorkRequirementsUI
+  6.2 postCourseWorkRequirementsControl
+	7.1 viewGradesUI
+  7.2 viewGradesControl
+	8.1 postGradeUI
+  8.2 postGradeControl
+	9.1 takeQuizUI
+  9.2 takeQuizControl
+	10.1 postQuizUI
+ 	10.2 postQuizControl
+  11.1 updateChecklistUI
+  11.2 updateChecklistControl
+	12.1 setChecklistUI 		
+  12.2 setChecklistControl
+	13.1 viewGroupsUI
+  13.2 viewGroupsControl
+	14.1 createGroupsUI
+  14.2 createGroupsControl
+	15.1 sendCourseEmailUI	
+  15.2 sendCourseEmailControl
+	16.1 updateProfileUI
+  16.2 updateProfileControl
+	17.1 createCourseUI
+  17.2 createCourseControl
+	18.1 createUserAccountsUI
+  18.2 createUserAccountsControl
+	19.1 addStudentCourseRegistrationUI
+  19.2 addStudentCourseRegistrationControl
+	20.1 viewClasslistUI
+  20.2 viewClasslistControl
+	21.1 addCourseOfferingInfoUI 	
+  21.2 addCourseOfferingInfoControl
+
+//Page Break
+
 Title page
 
 1. Introduction
@@ -46,3 +92,36 @@ Title page
     
     
 2. Body
+
+    2.1 Design Module Viewpoint:
+    
+        2.1.1 System Class View:
+        
+        
+        2.1.2 System Description:
+        
+        
+     2.2 Design Behavioural Viewpoint:
+     
+        2.2.1. login 
+		    2.2.2. viewCourseContent 		
+		    2.2.3. addCourseContent 		
+		    2.2.4. viewAssignmentQuestions 	
+		    2.2.5. submitCourseWork 		
+		    2.2.6. postCourseWorkRequirements 	
+		    2.2.7. viewGrades 			
+		    2.2.8. postGrade 			
+		    2.2.9. takeQuiz 			
+		    2.2.10. postQuiz 		
+		    2.2.11. updateChecklist 		
+		    2.2.12. setChecklist 		
+		    2.2.13. viewGroups 			
+		    2.2.14. createGroups 		
+		    2.2.15. sendCourseEmail		
+		    2.2.16. updateProfile 		
+		    2.2.17. createCourse 		
+		    2.2.18. createUserAccounts	
+		    2.2.19. addStudentCourseRegistration
+		    2.2.20. viewClasslist		
+		    2.2.21. addCourseOfferingInfo 
+    
