@@ -16,41 +16,41 @@ November 10th, 2019
   2.2 viewCourseContentControl
   3.1 addCourseContentUI
   3.2 addCourseContentControl
-	4.1 viewAssignmentQuestionsUI
+  4.1 viewAssignmentQuestionsUI
   4.2 viewAssignmentQuestionsControl
-	5.1 submitCourseWorkUI
+  5.1 submitCourseWorkUI
   5.2 submitCourseWorkControl
-	6.1 postCourseWorkRequirementsUI
+  6.1 postCourseWorkRequirementsUI
   6.2 postCourseWorkRequirementsControl
-	7.1 viewGradesUI
+  7.1 viewGradesUI
   7.2 viewGradesControl
-	8.1 postGradeUI
+  8.1 postGradeUI
   8.2 postGradeControl
-	9.1 takeQuizUI
+  9.1 takeQuizUI
   9.2 takeQuizControl
-	10.1 postQuizUI
- 	10.2 postQuizControl
+  10.1 postQuizUI
+  10.2 postQuizControl
   11.1 updateChecklistUI
   11.2 updateChecklistControl
-	12.1 setChecklistUI 		
+  12.1 setChecklistUI 		
   12.2 setChecklistControl
-	13.1 viewGroupsUI
+  13.1 viewGroupsUI
   13.2 viewGroupsControl
-	14.1 createGroupsUI
+  14.1 createGroupsUI
   14.2 createGroupsControl
-	15.1 sendCourseEmailUI	
+  15.1 sendCourseEmailUI	
   15.2 sendCourseEmailControl
-	16.1 updateProfileUI
+  16.1 updateProfileUI
   16.2 updateProfileControl
-	17.1 createCourseUI
+  17.1 createCourseUI
   17.2 createCourseControl
-	18.1 createUserAccountsUI
+  18.1 createUserAccountsUI
   18.2 createUserAccountsControl
-	19.1 addStudentCourseRegistrationUI
+  19.1 addStudentCourseRegistrationUI
   19.2 addStudentCourseRegistrationControl
-	20.1 viewClasslistUI
+  20.1 viewClasslistUI
   20.2 viewClasslistControl
-	21.1 addCourseOfferingInfoUI 	
+  21.1 addCourseOfferingInfoUI 	
   21.2 addCourseOfferingInfoControl
 
 //Page Break
