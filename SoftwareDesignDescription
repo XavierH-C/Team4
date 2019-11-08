@@ -19,12 +19,12 @@ November 10th, 2019
   3.2 addCourseContentControl			-> Arif 
   4.1 viewAssignmentQuestionsUI			-> Arif 
   4.2 viewAssignmentQuestionsControl		-> Arif 
-  5.1 submitCourseWorkUI			-> Greg
-  5.2 submitCourseWorkControl			-> Greg
-  6.1 postCourseWorkRequirementsUI		-> Greg
-  6.2 postCourseWorkRequirementsControl		-> Greg
-  7.1 viewGradesUI				-> Greg
-  7.2 viewGradesControl				-> Greg
+  5.1 void submitCourseWorkUI(Assignment aIn, Student stuIn, Course cIn)		-> Greg
+  5.2 boolean submitCourseWorkControl(Assignment aIn, Student stuIn, Course cIn)	-> Greg
+  6.1 void postCourseWorkRequirementsUI(Course courseIn, String reqs)			-> Greg
+  6.2 boolean postCourseWorkRequirementsControl(Course courseIn, String reqs)		-> Greg
+  7.1 void viewGradesUI(Course courseIn, Student stuIn)					-> Greg
+  7.2 void viewGradesControl(Course courseIn, Student stuIn)				-> Greg
   8.1 postGradeUI				-> Sam
   8.2 postGradeControl				-> Sam
   9.1 takeQuizUI				-> Sam
@@ -51,17 +51,17 @@ November 10th, 2019
   19.2 addStudentCourseRegistrationControl	-> Xavier
   20.1 viewClasslistUI				-> Xavier
   20.2 viewClasslistControl			-> Xavier
-  21.1 addCourseOfferingInfoUI 			-> Greg
-  21.2 addCourseOfferingInfoControl		-> Greg
-  22.  Data manager
-  23.  User
+  21.1 void addCourseOfferingInfoUI(Course courseIn, String info) 			-> Greg
+  21.2 boolean addCourseOfferingInfoControl(Course courseIn, String info)		-> Greg
+  22.  DataManager 
+  23.  UserManager
   24.  TA
   25.  Student
   26.  Prof
   27.  Admin
   28.  Course
   29.  Assignment
-  30.  Grade
+  30.  Grade(Student stuIn, double grade)						->Greg
   31.  Email
   32.  Profile
   
