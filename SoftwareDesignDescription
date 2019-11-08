@@ -54,7 +54,7 @@ November 10th, 2019
   21.1 void addCourseOfferingInfoUI(Course courseIn, String info) 			-> Greg
   21.2 boolean addCourseOfferingInfoControl(Course courseIn, String info)		-> Greg
   22.  DataManager 
-  23.  UserManager
+  23.  UserM
   24.  TA
   25.  Student
   26.  Prof
