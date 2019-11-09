@@ -56,14 +56,14 @@ November 10th, 2019
   22.  DataManager 
   23.  UserM
   24.  TA
-  25.  Student
+  25.  Student					-> Sam
   26.  Prof
   27.  Admin
   28.  Course
   29.  Assignment
   30.  Grade(Student stuIn, double grade)						->Greg
   31.  Email
-  32.  Profile
+  32.  Profile					-> Sam
   
   
 
