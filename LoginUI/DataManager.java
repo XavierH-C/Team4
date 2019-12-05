@@ -9,9 +9,9 @@ public class DataManager {
 	     } catch (Exception e) {
 	      System.err.println(e.toString());
 	     }
-		String url = "jdbc:mysql://cs2043.cs.unb.ca:3306/rhurlbur";
+		String url = "jdbc:mysql://cs2043.cs.unb.ca:3306/cs204301ateam4";
 		try {
-		connection = DriverManager.getConnection(url, "rhurlbur", "Q8TJ2FdY");
+		connection = DriverManager.getConnection(url, "cs204301ateam4", "0RLUlIG3");
 		} catch (SQLException e) {
 		System.err.println("Database connection error.");
 		}
